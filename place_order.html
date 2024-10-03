@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACE ORDER</title>
+    <link rel="stylesheet" href="place_order.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">PLACE ORDER</div>
+        <div class="form-group">
+            <input type="text" class="search-bar" placeholder="SEARCH ITEM" id="searchItem">
+            <br><br>
+            <button class="button" id="searchButton">SEARCH</button>
+        </div>
+        <div class="input-group">
+            <div class="form-group">
+                <label class="label">ORDER ID</label>
+                <input type="text" class="input" id="orderId" readonly>
+            </div>
+            <div class="form-group">
+                <label class="label">ITEM ID</label>
+                <input type="text" class="input" id="itemId" readonly>
+            </div>
+            <div class="form-group">
+                <label class="label">NAME</label>
+                <input type="text" class="input" id="itemName" readonly>
+            </div>
+            <div class="form-group">
+                <label class="label">PRICE</label>
+                <input type="text" class="input" id="itemPrice" readonly>
+            </div>
+            <div class="form-group">
+                <label class="label">DISCOUNT</label>
+                <input type="text" class="input" id="itemDiscount" readonly>
+            </div>
+            <div class="form-group">
+                <label class="label">QUANTITY</label>
+                <input type="text" class="input" id="itemQuantity">
+            </div>
+        </div>
+        <button class="add-item-btn" id="addToCartButton">+ ADD TO CART</button>
+        <div class="form-group">
+            <label class="label">CUSTOMER NAME</label>
+            <input type="text" class="input" id="customerName">
+        </div>
+        <div class="form-group">
+            <label class="label">TELEPHONE NUMBER</label>
+            <input type="text" class="input" id="telephoneNumber">
+        </div>
+        <div class="form-group">
+            <label class="label">ORDER ITEMS</label>
+            <textarea class="input" rows="3" id="orderItems" readonly></textarea>
+        </div>
+        <div class="form-group">
+            <label class="label">ORDER DISCOUNT</label>
+            <input type="text" class="input" id="orderDiscount">
+        </div>
+        <div class="form-group">
+            <label class="label">ORDER TOTAL</label>
+            <input type="text" class="input" id="orderTotal" readonly>
+        </div>
+        <div class="button-container">
+            <button class="button primary-btn" id="placeOrderButton">PLACE ORDER</button>
+            <button class="button" id="exitButton">EXIT</button>
+        </div>
+    </div>
+
+    
+    <script type="module" src="place_order.js"></script>
+    
+</body>
+</html>

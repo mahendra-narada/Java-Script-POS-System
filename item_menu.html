@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEM MENU</title>
+    <link rel="stylesheet" href="item_menu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">ITEM MENU</div>
+        <div class="form-group">
+            <input type="text" id="searchItem" onkeyup="filterTable()" class="search-bar" placeholder="SEARCH ITEM">
+            <br><br>
+                <button class="button" id="searchButton">SEARCH</button>
+        </div>
+        <div class="table-wrapper">
+            <table class="table" id="itemTable">
+                <tbody id="itemTableBody">
+                    <!-- rows  -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="input_itemId" placeholder="ITEM ID" >
+            <input type="text" id="input_itemName" placeholder="ITEM NAME" >
+            <input type="text" id="input_itemPrice" placeholder="ITEM PRICE" >
+            <input type="text" id="input_itemDiscount" placeholder="ITEM DISCOUNT"><br><br>
+            <label for="expireDate"> EXPIRE DATE =></label>
+            <input type="date" id="input_expireDate" name="expireDate">
+        </div>
+
+        <div class="button-container">
+            <button class="button" id="addItemButton">ADD ITEM</button>
+            <button class="button" id="updateItemButton">UPDATE ITEM</button>
+            <button class="button" id="deleteItemButton">DELETE ITEM</button>
+            
+            <button class="button" onclick="window.location.href='index.html'">EXIT</button>
+        </div>
+
+       
+    </div>
+    
+    <script src="item-menu.js"></script>
+</body>
+</html>
